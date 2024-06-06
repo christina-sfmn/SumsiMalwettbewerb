@@ -1,6 +1,6 @@
 <h1>Sumsi Malwettbewerb Webseite</h1>
 
-<p>Dieses Repository entstand stellt ein Übungsprojekt dar. Es enthält alle Dateien für die Sumsi Malwettbewerb Webseite, die als Gruppenprojekt in 2er Teams im Rahmen der Coding Challenge 2 an der Coding School Wörthersee erstellt wurde.</p>
+<p>Dieses Repository stellt ein Übungsprojekt dar. Es enthält alle Dateien für die Sumsi Malwettbewerb Webseite, die als Gruppenprojekt in 2er Teams im Rahmen der Coding Challenge 2 an der Coding School Wörthersee erstellt wurde.</p>
 
 <h2>Inhalt</h2>
 <ul>
