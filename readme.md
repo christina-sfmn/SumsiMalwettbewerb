@@ -33,7 +33,7 @@
 <h3>Schritt-für-Schritt-Anleitung</h3>
 <ol>
 <li>Repository klonen:<br> 
-<code>git clone https://github.com/christina-sfmn/SumsiMalwettbewerb.git</li>
+<code>git clone https://github.com/christina-sfmn/SumsiMalwettbewerb.git</code></li>
 <li>In das Verzeichnis wechseln:<br> 
 <code>cd SumsiMalwettbewerb</code></li>
 <li>Abhängigkeiten installieren:<br> 
