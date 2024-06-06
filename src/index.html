@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sumsi Malwettbewerb</title>
+    <link href="./output.css" rel="stylesheet" />
+  </head>
+  <body id="body-content" onload="authentication()">
+    <!-- NAVIGATION -->
+    <section class="navigation-bar">
+      <img
+        src="../assets/logos/RLB_Logo_4c_NEW_TypoWEISS.png"
+        alt="Logo der Raiffeisen Landesbank Kärnten"
+        class="logo" />
+
+      <!-- Mobile Menu Button -->
+      <button id="navbar-toggle">
+        <svg
+          class="w-8 h-8 mr-5"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg">
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h16m0 6H4"></path>
+        </svg>
+      </button>
+
+      <nav class="md:visible invisible" id="navbar-menu">
+        <a href="index.html" class="text-rf_yellow hover:text-white">Home</a>
+        <a href="#howTo" class="text-rf_yellow hover:text-white"
+          >So funktioniert's</a
+        >
+        <a href="#uploadImage" class="text-rf_yellow hover:text-white"
+          >Bild einreichen</a
+        >
+        <a href="#sumsiGallery" class="text-rf_yellow hover:text-white"
+          >Sumsi Galerie</a
+        >
+        <button id="langDE" onclick="resetToGerman()">DE</button>
+        <button id="langEN" onclick="translateToEnglish()">EN</button>
+      </nav>
+    </section>
+
+    <!-- HEADER -->
+    <header id="homeHeader" class="relative">
+      <div class="relative z-10">
+        <img
+          src="../assets/img/lucas-alexander-sJuDgtkUyYs-unsplash.jpg"
+          loading="lazy"
+          alt="Kind malt ein Bild"
+          class="w-full md:h-[35rem] h-80 object-cover" />
+      </div>
+      <div class="bg-black opacity-50 absolute inset-0 z-20"></div>
+      <div
+        class="absolute inset-0 flex flex-col justify-center items-center gap-5 z-30">
+        <h1 class="md:text-6xl text-4xl text-white font-light">
+          Willkommen beim <br /><span>Sumsi Malwettbewerb!</span>
+        </h1>
+        <a href="teilnahmebedingungen.html" class="btn-more">Mehr Infos</a>
+      </div>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+      <!-- Intro -->
+      <section
+        id="generalInfo"
+        class="container mx-auto flex md:flex-row flex-col-reverse justify-center items-center gap-10 min-h-[35rem] py-10">
+        <div class="w-full">
+          <img
+            src="../assets/img/jubeln.png"
+            loading="lazy"
+            alt="Sumsi beim Malen" />
+        </div>
+        <div class="w-full flex flex-col gap-3">
+          <h2 class="normal-case text-3xl font-black">
+            Liebe Kinder, Liebe Eltern!
+          </h2>
+          <p>
+            Wie jedes Jahr gibt es auch heuer unseren traditionellen Sumsi
+            Malwettbewerb. Wieder digital, wieder mit Voting und großer
+            Online-Galerie.
+          </p>
+          <p>
+            Jedes Elternteil, das bis zum
+            <span class="date-span">01.11.2024</span> die Zeichnung seines
+            Kindes mithilfe des nachstehenden Kontaktformulares hochlädt und
+            einreicht, wird anschließend in der großen Sumsi Galerie auf
+            <a class="link" href="#">www.raiffeisen-sumsi.at</a>
+            veröffentlicht.
+          </p>
+          <p>
+            Ich freue mich auf viele bunte Zeichnungen & ein spannendes Voting!
+          </p>
+          <span class="italic font-light">Eure Raiffeisen Sumsi</span>
+        </div>
+      </section>
+
+      <!-- How to -->
+      <section id="howTo">
+        <!-- Step 1 -->
+        <article
+          class="bg-black flex justify-center items-center min-h-[35rem] relative py-16">
+          <div class="steps-wrapper-heading">
+            <div class="md:w-2/3 w-full">
+              <h2 class="font-extrabold">Mitmachen ist ganz einfach.</h2>
+              <h2 class="font-light border-b-4 border-rf_yellow pb-2 w-fit">
+                So funktioniert's!
+              </h2>
+            </div>
+            <div class="steps-text xl:2/3 md:w-1/2 w-full">
+              <h3>Schritt 1: Zeichnen</h3>
+              <p>
+                Beim heurigen Malwettbewerb dreht sich alles um das Thema
+                „Gesunde Ernährung“. Die Lieblingsspeise von Sumsi ist frischer
+                Blütenstaub und natürlich zuckersüßer Honig. Ernährst du dich
+                auch gesund, so wie Sumsi? Zeichne Deine Lieblingsspeise.
+                Frisches Essen aus der Natur, alles, was man im Herbst so ernten
+                kann ...
+              </p>
+            </div>
+
+            <div class="steps-img-heading">
+              <img
+                src="../assets/img/malen.png"
+                loading="lazy"
+                alt="Sumsi beim Malen" />
+            </div>
+          </div>
+        </article>
+
+        <!-- Step 2 -->
+        <article>
+          <div class="steps-wrapper-reverse">
+            <div class="steps-img">
+              <img
+                src="../assets/img/smartphone.png"
+                loading="lazy"
+                alt="Sumsi mit Smartphone" />
+            </div>
+            <div class="steps-text">
+              <h3>Schritt 2: Digitalisieren & hochladen</h3>
+              <p>
+                Jedes Elternteil, dass die Zeichnung seines Kindes mithilfe des
+                nachstehenden Kontaktformulares hochlädt und einreicht, wird
+                anschließend in der großen Sumsi Galerie auf
+                <a class="link" href="#">www.raiffeisen-sumsi.at</a>
+                veröffentlicht.
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <!-- Step 3 -->
+        <article class="bg-rf_yellow">
+          <div class="steps-wrapper">
+            <div class="steps-text">
+              <h3>Schritt 3: Ausstellen</h3>
+              <p>
+                In der großen Sumsi Galerie werden dann alle Kunstwerke online
+                ausgestellt. Deine Freunde, Familie, Großeltern und Nachbarn
+                können dort deine Zeichnung bewundern & für dich voten.
+              </p>
+            </div>
+            <div class="steps-img">
+              <img
+                src="../assets/img/laptop.png"
+                loading="lazy"
+                alt="Sumsi am Laptop" />
+            </div>
+          </div>
+        </article>
+
+        <!-- Step 4 -->
+        <article>
+          <div class="steps-wrapper-reverse">
+            <div class="steps-img">
+              <img
+                src="../assets/img/verliebt.png"
+                loading="lazy"
+                alt="Sumsi mit Herzen" />
+            </div>
+            <div class="steps-text">
+              <h3>Schritt 4: Voting</h3>
+              <p>
+                Jede Zeichnung kann gewinnen! Es können pro Person max. 5 Votes
+                für unterschiedliche Zeichnungen abgegeben werden. Ganz einfach:
+                Gehe in die Sumsi Galerie, such dir deine 5 Lieblingszeichnungen
+                aus und klicke auf den Voting-Button.
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <!-- Step 5 -->
+        <article class="bg-black">
+          <div class="steps-wrapper">
+            <div class="steps-text text-white">
+              <h3>Schritt 5: Gewinnen</h3>
+              <p>
+                Mit Glück gibt es einen von 10 tollen Preisen zu gewinnen! Unter
+                anderem werden Kinotickets und weitere Goodies der Raiffeisen
+                Landesbank Kärnten verlost. Die Eltern der Gewinner:innen werden
+                per E-Mail verständigt. Alle anderen Teilnehmer:innen werden
+                ebenfalls benachrichtigt, wenn das Gewinnspiel beendet ist.
+              </p>
+              <p>
+                Die Preise werden persönlich in der Raiffeisen Filiale am
+                Raiffeisenplatz 1 in 9020 Klagenfurt übergeben. Das genaue Datum
+                wird noch bekanntgegeben.
+              </p>
+            </div>
+            <div class="steps-img">
+              <img
+                src="../assets/img/briefe.png"
+                loading="lazy"
+                alt="Sumsi mit Briefen" />
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <!-- Upload Image -->
+      <section id="uploadImage">
+        <div class="container mx-auto py-20">
+          <h2 class="font-extrabold">Mach mit & gewinne!</h2>
+          <h2 class="font-light border-b-4 border-rf_yellow pb-2 w-fit mb-10">
+            Sumsi freut sich!
+          </h2>
+          <h3 class="mb-3">Jetzt Bild einreichen!</h3>
+          <p>
+            Bitte alle Pflichtfelder ausfüllen, den Bedingungen zustimmen und
+            das Bild hochladen.
+          </p>
+
+          <!-- Infotext -->
+          <div
+            id="info-msg"
+            class="hidden w-full text-lg font-bold mt-6 mb-8"></div>
+          <div
+            id="error-msg"
+            class="hidden w-full text-lg font-bold mt-6 mb-8"></div>
+
+          <!-- Upload form -->
+          <form
+            id="upload-form"
+            class="bg-gray-200 md:px-20 px-5 md:py-20 py-5 mt-5 relative">
+            <div class="grid grid-cols-2 gap-10">
+              <label for="legalguardian_firstname"
+                >Vorname Erziehungsberechtigte:r *
+
+                <input
+                  type="text"
+                  id="legalguardian_firstname"
+                  name="legalguardian_firstname"
+                  class="bg-white rounded-md px-3 py-1 w-full focus:ring-rf_yellow"
+                  placeholder="Max"
+                  autocomplete="given-name"
+                  required />
+              </label>
+
+              <label for="legalguardian_lastname"
+                >Nachname Erziehungsberechtigte:r *
+                <input
+                  type="text"
+                  id="legalguardian_lastname"
+                  name="legalguardian_lastname"
+                  class="bg-white rounded-md px-3 py-1 w-full focus:ring-rf_yellow"
+                  placeholder="Musterman"
+                  autocomplete="family-name"
+                  required />
+              </label>
+
+              <label for="child_firstname"
+                >Vorname Kind *
+                <input
+                  type="text"
+                  id="child_firstname"
+                  name="child_firstname"
+                  class="bg-white rounded-md px-3 py-1 w-full focus:ring-rf_yellow"
+                  placeholder="Lisa"
+                  autocomplete="given-name"
+                  required
+              /></label>
+
+              <label for="child_age"
+                >Alter Kind *
+                <input
+                  type="number"
+                  id="child_age"
+                  name="child_age"
+                  class="bg-white rounded-md px-3 py-1 w-full focus:ring-rf_yellow"
+                  placeholder="8"
+                  autocomplete="off"
+                  required
+              /></label>
+
+              <div class="col-span-2">
+                <label for="email"
+                  >E-Mail-Adresse *
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    class="bg-white rounded-md px-3 py-1 w-full focus:ring-rf_yellow"
+                    placeholder="max.musterman@example.com"
+                    autocomplete="email"
+                    required />
+                </label>
+              </div>
+            </div>
+            <div class="pt-10 pb-2">
+              <label for="image">Bild hier hochladen:</label>
+              <input
+                type="file"
+                id="image"
+                name="image"
+                class="bg-white rounded-md px-5 py-10 w-full text-center"
+                accept="image/jpg, image/png, image/jpeg, image/pdf"
+                required />
+            </div>
+            <span class="text-gray-600 text-sm"
+              >Erlaubte Dateiformate: JPG, JPEG, PNG, PDF <br />
+              Maximale Dateigröße: 5 MB</span
+            >
+            <div class="text-gray-600 mt-5">
+              <label for="approval_privacypolicy" class="flex items-center">
+                <input
+                  type="checkbox"
+                  id="approval_privacypolicy"
+                  name="approval_privacypolicy"
+                  class="custom-checkbox"
+                  required />
+                <span class="ml-2 text-sm"
+                  >Zustimmung
+                  <a href="datenschutz.html" class="link">Datenschutz</a>
+                  *</span
+                >
+              </label>
+              <label for="approval_participation" class="flex items-center">
+                <input
+                  type="checkbox"
+                  id="approval_participation"
+                  name="approval_participation"
+                  class="custom-checkbox"
+                  required />
+                <span class="ml-2 text-sm"
+                  >Zustimmung
+                  <a href="teilnahmebedingungen.html" class="link"
+                    >Teilnahmebedingungen</a
+                  >
+                  (inkl. Urheberrechte) *</span
+                >
+              </label>
+              <label for="approval_mailnotification" class="flex items-center">
+                <input
+                  type="checkbox"
+                  id="approval_mailnotification"
+                  name="approval_mailnotification"
+                  class="custom-checkbox"
+                  required />
+                <span class="ml-2 text-sm"
+                  >Zustimmung Verständigung per E-Mail *</span
+                >
+              </label>
+            </div>
+
+            <p class="text-gray-600 text-sm mb-5 mt-3">* Pflichtfelder</p>
+            <button
+              type="submit"
+              class="btn-submit bg-rf_yellow hover:bg-black hover:text-white hover:transition-all px-5 py-3 font-bold rounded-lg">
+              Absenden
+            </button>
+            <div
+              id="upload-message"
+              class="text-xl text-black font-black py-2 mt-8"></div>
+          </form>
+        </div>
+      </section>
+
+      <!-- Gallery -->
+      <section id="sumsiGallery" class="bg-rf_yellow">
+        <div class="container mx-auto py-20">
+          <h2 class="font-extrabold">Die Sumsi Galerie</h2>
+          <h2 class="font-light border-b-4 border-white pb-2 w-fit">
+            Kunstwerke ansehen & abstimmen!
+          </h2>
+          <div
+            id="galleryContainer"
+            class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5 mt-16"></div>
+
+          <!-- Back and forward buttons -->
+          <div class="relative mt-10 mb-14">
+            <button
+              id="prev-btn"
+              class="hidden absolute left-0 font-medium hover:bg-black hover:text-white hover:transition-all leading-6 pt-1 px-2">
+              ← Zurück
+            </button>
+            <button
+              id="load-more-btn"
+              class="absolute right-0 font-medium hover:bg-black hover:text-white hover:transition-all leading-6 pt-1 px-2">
+              Weitere Bilder anzeigen →
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="logo-section">
+        <a
+          href="https://www.raiffeisen.at/ktn/rlb/de/privatkunden.html"
+          target="_blank"
+          ><img
+            src="../assets/logos/RLB_Logo_4c_NEW_TypoWEISS.png"
+            alt="Logo der Raiffeisen Landesbank Kärnten"
+            class="flex items-center w-72 h-auto hover:scale-105 hover:transition-all"
+        /></a>
+        <a
+          href="https://www.facebook.com/RaiffeisenLandesbankKaernten/"
+          target="_blank"
+          ><img
+            src="../assets/icons/facebook-svgrepo-com.svg"
+            alt="Facebook Logo"
+            class="w-14 h-14 hover:scale-125 hover:transition-all mt-5"
+        /></a>
+      </div>
+
+      <div class="info-section">
+        <div class="contact">
+          <p class="uppercase font-extrabold">Kontakt</p>
+          <p>
+            Raiffeisen Landesbank Kärnten <br />
+            Raiffeisenplatz 1 <br />
+            9020 Klagenfurt am Wörthersee
+          </p>
+          <p>
+            T:
+            <a href="tel:0043463299300" class="mt-2 underline"
+              >+43 4632 993 00</a
+            >
+          </p>
+          <p>
+            E:
+            <a href="mailto:info@rbgk.raiffeisen.at" class="mt-2 underline"
+              >info@rbgk.raiffeisen.at</a
+            >
+          </p>
+        </div>
+
+        <div class="links">
+          <a
+            href="https://www.raiffeisen.at/ktn/rlb/de/meine-bank/raiffeisen-bankengruppe/agb.html"
+            target="_blank"
+            class="hover:text-rf_yellow hover:transition-all"
+            >AGB</a
+          >
+          <a
+            href="cookies.html"
+            class="hover:text-rf_yellow hover:transition-all"
+            >Cookie Richtlinien</a
+          >
+          <a
+            href="datenschutz.html"
+            class="hover:text-rf_yellow hover:transition-all"
+            >Datenschutz</a
+          >
+          <a
+            href="https://www.raiffeisen.at/ktn/rlb/de/meine-bank/raiffeisen-bankengruppe/disclaimer.html"
+            target="_blank"
+            class="hover:text-rf_yellow hover:transition-all"
+            >Disclaimer</a
+          >
+          <a
+            href="https://www.raiffeisen.at/ktn/rlb/de/meine-bank/raiffeisen-bankengruppe/impressum.html"
+            target="_blank"
+            class="hover:text-rf_yellow hover:transition-all"
+            >Impressum</a
+          >
+          <a
+            href="teilnahmebedingungen.html"
+            class="hover:text-rf_yellow hover:transition-all"
+            >Teilnahmebedingungen</a
+          >
+        </div>
+      </div>
+      <p class="text-xs text-white text-center">
+        © 2024 Raiffeisen Landesbank Kärnten
+      </p>
+    </footer>
+
+    <script src="./script.js"></script>
+    <script src="./mobilenav.js"></script>
+    <script src="./scriptTranslate.js"></script>
+  </body>
+</html>

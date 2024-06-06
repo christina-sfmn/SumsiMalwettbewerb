@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sumsi Malwettbewerb - Cookie Präferenzen</title>
+    <link href="./output.css" rel="stylesheet" />
+  </head>
+  <body id="body-content">
+    <!-- NAVIGATION -->
+    <section class="navigation-bar">
+      <img
+        src="../assets/logos/RLB_Logo_4c_NEW_TypoWEISS.png"
+        alt="Logo der Raiffeisen Landesbank Kärnten"
+        class="logo" />
+
+      <!-- Mobile Menu Button -->
+      <button id="navbar-toggle">
+        <svg
+          class="w-8 h-8 mr-5"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg">
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h16m0 6H4"></path>
+        </svg>
+      </button>
+
+      <nav class="md:visible invisible" id="navbar-menu">
+        <a
+          href="index.html"
+          class="text-rf_yellow hover:text-white hover:transition-all"
+          >Home</a
+        >
+        <a
+          href="index.html#howTo"
+          class="text-rf_yellow hover:text-white hover:transition-all"
+          >So funktioniert's</a
+        >
+        <a
+          href="index.html#uploadImage"
+          class="text-rf_yellow hover:text-white hover:transition-all"
+          >Bild einreichen</a
+        >
+        <a
+          href="index.html#sumsiGallery"
+          class="text-rf_yellow hover:text-white hover:transition-all"
+          >Sumsi Galerie</a
+        >
+        <button id="langDE" onclick="resetToGerman()">DE</button>
+        <button id="langEN" onclick="translateToEnglish()">EN</button>
+      </nav>
+    </section>
+
+    <!-- HEADER -->
+    <header class="relative">
+      <div class="relative z-10">
+        <img
+          src="../assets/img/lucas-alexander-sJuDgtkUyYs-unsplash.jpg"
+          loading="lazy"
+          alt="Kind malt ein Bild"
+          class="w-full h-80 object-cover" />
+      </div>
+    </header>
+
+    <!-- MAIN -->
+    <main class="container mx-auto py-20">
+      <h1 class="border-b-4 border-rf_yellow pb-9 w-fit my-10">
+        Cookie Richtlinien
+      </h1>
+      <p>
+        Wir nehmen den Schutz Ihrer persönlichen Daten sehr ernst. Wir behandeln
+        Ihre personenbezogenen Daten vertraulich und entsprechend der
+        gesetzlichen Vorschriften. In dieser Datenschutzerklärung informieren
+        wir Sie über die Datenverarbeitung im Rahmen unserer Website. Die
+        Nutzung unserer Webseite ist in der Regel ohne eigenständige Angabe
+        Ihrer personenbezogenen Daten möglich. Soweit auf unseren Seiten
+        personenbezogene Daten (beispielsweise Name, Anschrift oder
+        E-Mail-Adressen) erhoben werden, erfolgt dies stets, um die Nutzung der
+        Website ermöglichen zu können oder auf freiwilliger Basis.
+        Beispielsweise ist die Verarbeitung der IP-Adresse technisch bedingt und
+        kann nicht unterbunden werden.
+      </p>
+      <h3>Datenschutzrechtlicher Verantwortlicher</h3>
+      <p>
+        Diese Website wird von der Raiffeisenlandesbank Kärnten- Rechenzentrum
+        und Revisionsverband, registrierte Genossenschaft mit beschränkter
+        Haftung, Raiffeisenplatz 1, 9020 Klagenfurt am Wörthersee, betrieben.
+        Alternativ können Sie sich auch gerne an unseren Datenschutzbeauftragten
+        wenden: <br />
+        Raiffeisenplatz 1 <br />
+        9020 Klagenfurt am Wörthersee <br />
+        E:
+        <a class="link" href="mailto:datenschutz@rbgk.raiffeisen.at"
+          >datenschutz@rbgk.raiffeisen.at</a
+        >
+        <br />
+        T:
+        <a class="link" href="tel:00434639930012201">+43 463 993 00 – 12201</a>
+      </p>
+      <h3>Cookies</h3>
+      <p>
+        Unsere Website verwendet so genannte Cookies. Cookies sind Textdateien,
+        die beim Besuch der Website auf Ihrem Endgerät gespeichert werden. Wir
+        verwenden Cookies, um anonymisierte Analysen der Benutzung der Website
+        durchzuführen. Cookies setzen wir weiters dazu ein, Ihnen zusätzliche
+        Funktionen auf der Website anbieten zu können, um Interaktionen mit der
+        Webseite einfacher zu gestalten und eine fehlerfreie Anwendung
+        sicherzustellen (z. B. zur Erleichterung der Navigation auf einer
+        Website oder um Ihre Präferenzen und Einstellungen für den nächsten
+        Besuch zu speichern).
+      </p>
+      <h3>Erforderliche Cookies</h3>
+      <p>
+        Cookies, die für die grundlegenden Funktionen der Website notwendig
+        sind, verarbeiten wir aufgrund unseres berechtigten Interesses, Ihnen
+        unsere Inhalte präsentieren zu können, bzw. aufgrund vertraglicher oder
+        gesetzlicher Verpflichtungen Ihnen auf unserer Website Informationen
+        bereitzuhalten.
+      </p>
+      <h3>Funktionelle Cookies</h3>
+      <p>
+        Cookies, die es uns ermöglichen die Analyse der Websitenutzung
+        vorzunehmen, verwenden wir aufgrund Ihrer bei Benutzung unserer Website
+        erklärten Einwilligung.
+      </p>
+      <h3>Marketing-Cookies</h3>
+      <p>
+        Cookies, die es uns ermöglichen, Ihnen auf Ihre Interessen abgestimmte
+        Werbung zu unterbreiten, verwenden wir ebenfalls aufgrund Ihrer bei
+        Benutzung unserer Website erklärten Einwilligung. Einige Cookies bleiben
+        auf Ihrem Endgerät gespeichert, bis Sie diese löschen. Sie ermöglichen
+        es uns, Ihren Browser beim nächsten Besuch wiederzuerkennen. Die meisten
+        der von uns verwendeten Cookies werden nach Ende des Besuchs unserer
+        Website wieder gelöscht (sogenannte Session-Cookies). Cookies können
+        blockiert, deaktiviert oder gelöscht werden. Hierfür steht Ihnen eine
+        Vielzahl von Werkzeugen zur Verfügung (einschließlich
+        Browser-Steuerelemente und -Einstellungen). Informationen hierzu finden
+        Sie im Hilfebereich des von Ihnen benutzten Webbrowsers. Bei der
+        Deaktivierung aller von uns verwendeten Cookies kann z. B. die
+        Darstellung der Website eingeschränkt sein.
+      </p>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="logo-section">
+        <a
+          href="https://www.raiffeisen.at/ktn/rlb/de/privatkunden.html"
+          target="_blank"
+          class="w-fit"
+          ><img
+            src="../assets/logos/RLB_Logo_4c_NEW_TypoWEISS.png"
+            alt="Logo der Raiffeisen Landesbank Kärnten"
+            class="flex items-center w-72 h-auto hover:scale-105 hover:transition-all"
+        /></a>
+        <a
+          href="https://www.facebook.com/RaiffeisenLandesbankKaernten/"
+          target="_blank"
+          class="w-fit"
+          ><img
+            src="../assets/icons/facebook-svgrepo-com.svg"
+            alt="Facebook Logo"
+            class="w-14 h-14 hover:scale-125 hover:transition-all mt-5"
+        /></a>
+      </div>
+
+      <div class="info-section">
+        <div class="contact">
+          <p class="uppercase font-extrabold">Kontakt</p>
+          <p>
+            Raiffeisen Landesbank Kärnten <br />
+            Raiffeisenplatz 1 <br />
+            9020 Klagenfurt am Wörthersee
+          </p>
+          <p>
+            T:
+            <a href="tel:0043463299300" class="mt-2 underline"
+              >+43 4632 993 00</a
+            >
+          </p>
+          <p>
+            E:
+            <a href="mailto:info@rbgk.raiffeisen.at" class="mt-2 underline"
+              >info@rbgk.raiffeisen.at</a
+            >
+          </p>
+        </div>
+
+        <div class="links">
+          <a
+            href="https://www.raiffeisen.at/ktn/rlb/de/meine-bank/raiffeisen-bankengruppe/agb.html"
+            target="_blank"
+            class="hover:text-rf_yellow hover:transition-all"
+            >AGB</a
+          >
+          <a
+            href="cookies.html"
+            class="current hover:text-rf_yellow hover:transition-all"
+            >Cookie Richtlinien</a
+          >
+          <a
+            href="datenschutz.html"
+            class="hover:text-rf_yellow hover:transition-all"
+            >Datenschutz</a
+          >
+          <a
+            href="https://www.raiffeisen.at/ktn/rlb/de/meine-bank/raiffeisen-bankengruppe/disclaimer.html"
+            target="_blank"
+            class="hover:text-rf_yellow hover:transition-all"
+            >Disclaimer</a
+          >
+          <a
+            href="https://www.raiffeisen.at/ktn/rlb/de/meine-bank/raiffeisen-bankengruppe/impressum.html"
+            target="_blank"
+            class="hover:text-rf_yellow hover:transition-all"
+            >Impressum</a
+          >
+          <a
+            href="teilnahmebedingungen.html"
+            class="hover:text-rf_yellow hover:transition-all"
+            >Teilnahmebedingungen</a
+          >
+        </div>
+      </div>
+      <p class="text-xs text-white text-center">
+        © 2024 Raiffeisen Landesbank Kärnten
+      </p>
+    </footer>
+    <script src="./mobilenav.js"></script>
+    <script src="./scriptTranslate.js"></script>
+  </body>
+</html>

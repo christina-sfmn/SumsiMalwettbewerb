@@ -1,0 +1,253 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ----- IMPORT FONT ----- */
+@layer base {
+  @font-face {
+    font-family: "Swiss";
+    src: url("../assets/fonts/Swiss721BT-Light.woff2") format("woff2"),
+      url("../assets/fonts/Swiss721BT-Light.woff") format("woff");
+    font-weight: 300;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "Swiss";
+    src: url("../assets/fonts/Swiss721BT-LightItalic.woff2") format("woff2"),
+      url("../assets/fonts/Swiss721BT-LightItalic.woff") format("woff");
+    font-weight: 300;
+    font-style: italic;
+  }
+
+  @font-face {
+    font-family: "Swiss";
+    src: url("../assets/fonts/Swiss721BT-Roman.woff2") format("woff2"),
+      url("../assets/fonts/Swiss721BT-Roman.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "Swiss";
+    src: url("../assets/fonts/Swiss721BT-Italic.woff2") format("woff2"),
+      url("../assets/fonts/Swiss721BT-Italic.woff") format("woff");
+    font-weight: 400;
+    font-style: italic;
+  }
+
+  @font-face {
+    font-family: "Swiss";
+    src: url("../assets/fonts/Swiss721BT-Medium.woff2") format("woff2"),
+      url("../assets/fonts/Swiss721BT-Medium.woff") format("woff");
+    font-weight: 500;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "Swiss";
+    src: url("../assets/fonts/Swiss721BT-MediumItalic.woff2") format("woff2"),
+      url("../assets/fonts/Swiss721BT-MediumItalic.woff") format("woff");
+    font-weight: 500;
+    font-style: italic;
+  }
+
+  @font-face {
+    font-family: "Swiss";
+    src: url("../assets/fonts/Swiss721BT-Bold.woff2") format("woff2"),
+      url("../assets/fonts/Swiss721BT-Bold.woff") format("woff");
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "Swiss";
+    src: url("../assets/fonts/Swiss721BT-BoldItalic.woff2") format("woff2"),
+      url("../assets/fonts/Swiss721BT-BoldItalic.woff") format("woff");
+    font-weight: 700;
+    font-style: italic;
+  }
+
+  @font-face {
+    font-family: "Swiss";
+    src: url("../assets/fonts/Swiss721BT-Heavy.woff2") format("woff2"),
+      url("../assets/fonts/Swiss721BT-Heavy.woff") format("woff");
+    font-weight: 900;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "Swiss";
+    src: url("../assets/fonts/Swiss721BT-HeavyItalic.woff2") format("woff2"),
+      url("../assets/fonts/Swiss721BT-HeavyItalic.woff") format("woff");
+    font-weight: 900;
+    font-style: italic;
+  }
+}
+
+/* ----- NAVIGATION ----- */
+
+.navigation-bar {
+  @apply bg-black flex justify-between items-center shadow sticky top-0 left-0 z-50 h-[5rem];
+}
+
+.navigation-bar img.logo {
+  @apply flex items-center w-72 h-auto px-10 p-5;
+}
+
+#navbar-toggle {
+  @apply block md:hidden text-white focus:outline-none;
+}
+
+.navigation-bar nav {
+  @apply flex md:flex-row flex-col items-center lg:gap-5 md:gap-3 gap-1 px-10 py-5 font-bold lg:text-base md:text-xs text-base md:relative absolute md:top-0 top-[5rem] md:bg-transparent bg-black bg-opacity-75 md:w-auto w-full;
+}
+
+#langDE {
+  @apply bg-white hover:bg-rf_yellow font-normal rounded shadow lg:px-3 md:px-2 px-3 py-1 md:ml-5 ml-0 md:mt-0 mt-2 lg:text-sm md:text-xs text-sm;
+}
+
+#langEN {
+  @apply bg-white hover:bg-rf_yellow font-normal rounded shadow lg:px-3 md:px-2 px-3 py-1 md:-ml-2 ml-0 md:mb-0 mt-0 mb-2 lg:text-sm md:text-xs text-sm;
+}
+
+.current-lang {
+  @apply bg-rf_yellow font-black;
+}
+
+/* ----- GENERAL STYLES ----- */
+
+body {
+  @apply font-Swiss tracking-wide overflow-x-hidden;
+}
+
+h1 {
+  @apply text-3xl md:text-5xl font-black text-center mb-5;
+}
+
+h1 span {
+  @apply font-extrabold;
+}
+
+h2 {
+  @apply md:text-4xl text-2xl uppercase;
+}
+
+h3 {
+  @apply font-extrabold md:text-2xl text-xl mt-5;
+}
+
+p {
+  @apply font-light;
+}
+
+ul,
+ol {
+  @apply font-light list-disc ml-5;
+}
+
+main a:hover {
+  @apply bg-rf_yellow text-black;
+}
+
+.date-span {
+  @apply font-bold;
+}
+
+.link {
+  @apply underline;
+}
+
+.btn-more {
+  @apply md:text-xl text-base font-bold md:px-7 px-5 md:py-5 py-3 bg-rf_yellow hover:bg-black hover:text-white hover:transition-all rounded-lg;
+}
+
+.steps-wrapper-heading {
+  @apply relative container mx-auto flex flex-col md:items-start justify-center items-center gap-10 text-white;
+}
+
+.steps-wrapper-reverse {
+  @apply container mx-auto flex md:flex-row flex-col-reverse justify-center items-center gap-10 min-h-[35rem] py-10;
+}
+
+.steps-wrapper {
+  @apply container mx-auto flex md:flex-row flex-col justify-center items-center gap-10 min-h-[35rem] py-10;
+}
+
+.steps-text {
+  @apply flex flex-col gap-4 md:w-2/3 w-full;
+}
+
+.steps-img-heading {
+  @apply md:absolute relative xl:right-20 lg:right-10 md:right-5 xl:-bottom-8 lg:-bottom-2 md:bottom-0 w-80;
+}
+
+.steps-img {
+  @apply w-80;
+}
+
+/* ----- FORM ----- */
+
+#upload-form {
+  @apply md:text-base text-sm font-light;
+}
+
+.custom-checkbox {
+  @apply w-4 h-4 rounded-lg border border-white bg-white checked:bg-rf_yellow;
+}
+
+/* ----- GALLERY ----- */
+
+.submission-container {
+  @apply flex flex-col items-center;
+}
+
+.submission-container img {
+  @apply rounded-md aspect-square object-cover min-w-full;
+}
+
+.submission-container .child-info {
+  @apply font-bold my-3;
+}
+
+.submission-container .votes-info {
+  @apply mb-3;
+}
+
+.submission-container .votes-info::before {
+  @apply content-[url(../assets/icons/heart-svgrepo-com.svg)] relative top-[0.4rem] right-[0.2rem];
+}
+
+.submission-container button {
+  @apply bg-black hover:bg-white text-white hover:text-black hover:transition-all font-bold rounded px-4 py-2 mb-6;
+}
+
+/* ----- FOOTER ----- */
+
+footer {
+  @apply bg-black flex flex-col gap-5 px-10 md:py-10 py-20;
+}
+
+footer .logo-section {
+  @apply flex flex-col md:items-start items-center;
+}
+
+footer .info-section {
+  @apply flex md:flex-row flex-col md:justify-between justify-center items-center text-white md:my-0 my-6;
+}
+
+footer .contact {
+  @apply md:text-left text-center;
+}
+
+footer .links {
+  @apply flex flex-col md:items-end items-center font-bold md:mt-0 mt-5;
+}
+
+footer .contact a:hover {
+  @apply bg-rf_yellow text-black;
+}
+
+.current {
+  @apply text-rf_yellow;
+}
